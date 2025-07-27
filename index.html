@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krushna Ade Patil - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+   html {
+    scroll-behavior: smooth;
+   }
+
+   body {
+    color: #e0e0e0;
+   }
+
+   .skill-chip:hover {
+    transform: scale(1.05);
+   }
+
+   .glow {
+    text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+   }
+
+   .bg-animated {
+    background: linear-gradient(270deg, #0f0f0f, #1a1a40, #002b36, #1a1a40, #0f0f0f);
+    background-size: 1000% 1000%;
+    animation: gradientMove 30s ease infinite;
+   }
+
+   @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+   }
+  </style>
+
+
+  </style>
+</head>
+<body class="bg-animated text-gray-100">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-black/80 backdrop-blur z-50 shadow">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="images/logo4.png" alt="Logo" class="h-25 w-25 object-contain">
+        <h1 class="text-2xl font-bold text-cyan-400 glow">Portfolio</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-cyan-400">Home</a>
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="#projects" class="hover:text-cyan-400">Projects</a>
+        <a href="#education" class="hover:text-cyan-400">Education</a>
+        <a href="#certifications" class="hover:text-cyan-400">Certifications</a>
+        <a href="#contact" class="hover:text-cyan-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center justify-center pt-28 px-6 text-center" data-aos="fade-in">
+    <div>
+      <img src="images/1.png.jpg" alt="User" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="glow">Krushna Sudhakarrao Ade Patil</span></h1>
+      <h2 class="text-2xl md:text-3xl mb-6">Aspiring Computer Science Engineer & Software Developer</h2>
+      <p class="max-w-2xl mx-auto text-gray-400 mb-6">
+        I blend creativity with code to build stunning web experiences, smart data apps, and animated interfaces.
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="pt-24 pb-20" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 glow">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 text-center mb-6 md:mb-0">
+          <img src="images/1.png.jpg" alt="Krushna" class="rounded-lg shadow-lg mx-auto">
+        </div>
+        <div class="md:w-2/3 md:pl-12">
+          <p class="text-gray-300 mb-6">
+            I'm a B.Tech CSE student passionate about turning ideas into real applications. My specialties lie in full-stack development, UI animation, and data-driven solutions. Every project I build represents a learning milestone and a commitment to innovation.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-chip bg-blue-900 text-white px-4 py-2 rounded-full">Java</span>
+            <span class="skill-chip bg-green-900 text-white px-4 py-2 rounded-full">Python</span>
+            <span class="skill-chip bg-yellow-700 text-white px-4 py-2 rounded-full">HTML/CSS</span>
+            <span class="skill-chip bg-red-800 text-white px-4 py-2 rounded-full">MySQL</span>
+            <span class="skill-chip bg-purple-900 text-white px-4 py-2 rounded-full">C/C++</span>
+          </div>
+          <a href="assets\resume.pdf.png"  target="_blank" class="inline-block mt-6 px-6 py-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition">
+            <i class="fas fa-file-pdf mr-2"></i>View Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="pt-24 pb-20" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 glow">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-cyan-400">Real World Weather App</h3>
+          <p class="text-gray-400">An animated weather app with lightning, rain, and seasonal transitions.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h4 class="text-xl font-semibold mb-2 text-cyan-400">Data Science Project</h4>
+          <p class="text-gray-400">Used temperature and promotions data to predict beverage sales.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h5 class="text-xl font-semibold mb-2 text-cyan-400">Personal Portfolio Website</h5>
+          <p class="text-gray-400">An animated website to showcase myself professionally.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h6 class="text-xl font-semibold mb-2 text-cyan-400">Snake And Ladder App</h6>
+          <p class="text-gray-400">A fun game made for practice and entertainment.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h7 class="text-xl font-semibold mb-2 text-cyan-400">Tic Tac Toe Game</h7>
+          <p class="text-gray-400">Classic X & O game built using HTML, CSS & JS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="pt-24 pb-20" data-aos="fade-right">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 glow">Education</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-1">B.Tech in Computer Science Engineering</h3>
+          <p class="text-gray-400">Ajeenkya D Y Patil University, Pune<br>2023 - 2027</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-1">Higher Secondary Certificate (HSC)</h3>
+          <p class="text-gray-400">Maharashtra State Board<br>2021 - 2023</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-1">Secondary School Certificate (SSC)</h3>
+          <p class="text-gray-400">Maharashtra State Board<br>Completed in 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="pt-24 pb-20" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 glow">Certifications</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Professional Content Creation</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate_of_Tech.jpg" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Automata Theory</h3>
+        <p class="text-sm text-gray-400 mb-3">MindLuster</p>
+        <a href="assets/Certificates/Certificate of Automata.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Programming in C</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of C language.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Introduction to DFA</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of DFA.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Introduction to Electronics</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of Electronics.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Python Programming</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of Python.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Vector Calculus in Math</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of Vector Calculus.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Data Structure in C</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of Data Structure in C.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Data Visualization with Tableau</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets/Certificates/Certificate of Tableau.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Robotics and Control by IIT Roorkee</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets\Certificates\Certificate of Robotics and Control by IIT Roorkee.pdf" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">9 th Convocation</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets\Certificates\Certificate of 9th Convocation .jpg" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Operating System </h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets\Certificates\Certificate of Operating System.jpg" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform hover:scale-105 text-center">
+        <h3 class="text-lg font-semibold text-cyan-400 mb-2">Development for Industry Readiness</h3>
+        <p class="text-sm text-gray-400 mb-3">Online Course</p>
+        <a href="assets\Certificates\Certificate of Professional Development for Industry Readiness.jpg" target="_blank" class="text-cyan-300 hover:underline">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <!-- Contact Section With Google Sheet Backend -->
+<section id="contact" class="pt-24 pb-20" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 glow">Contact</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Contact Info -->
+      <div>
+        <p class="mb-4"><i class="fas fa-envelope text-cyan-400 mr-2"></i> adepatilkrushna@gmail.com</p>
+        <p class="mb-4"><i class="fas fa-envelope text-cyan-400 mr-2"></i> krushnaade941@gmail.com</p>
+        <p class="mb-4"><i class="fas fa-phone text-cyan-400 mr-2"></i> +91 9699978771</p>
+        <p class="mb-4"><i class="fas fa-map-marker-alt text-cyan-400 mr-2"></i> Pune, Maharashtra, India - 412105</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://www.linkedin.com/in/krushna-ade-patil-626642339" target="_blank" class="text-cyan-400 hover:underline text-3xl">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=rz6blnk" target="_blank" class="text-pink-500 hover:underline text-3xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form name="submit-to-google-sheet" class="space-y-4">
+        <input type="text" name="Name" placeholder="Your Name" required class="w-full p-3 rounded border bg-gray-800 text-white" />
+        <input type="email" name="Email" placeholder="Your Email" required class="w-full p-3 rounded border bg-gray-800 text-white" />
+        <textarea name="Message" placeholder="Your Message" rows="5" required class="w-full p-3 rounded border bg-gray-800 text-white"></textarea>
+        <button type="submit" class="bg-cyan-500 text-white px-6 py-3 rounded hover:bg-cyan-600">Send</button>
+        <span id="msg" class="text-green-400 text-sm ml-2"></span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Google Sheets Script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyuNfxxD8zy0BGb4fmIt2RAk9Ch8dckkd3Hso9l9jlwrY_ga9gXk_ZFgQsOwaRaM9v8VQ/exec'; // Replace with your script ID
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => msg.innerHTML = "", 5000);
+        form.reset();
+      })
+      .catch(error => {
+        msg.innerHTML = "Something went wrong!";
+      });
+  });
+</script>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+
+</body>
+</html>
